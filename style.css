@@ -1,0 +1,226 @@
+@font-face {
+  font-family: Print Clearly;
+  src: url("./resources/fonts/PrintClearly.TTF");
+}
+@font-face {
+  font-family: Nunito;
+  src: url("./resources/fonts/Nunito.ttf");
+}
+
+body {
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  background-color: #C0CEDE;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Print Clearly;
+}
+
+#header-logo {
+  width: 150px;
+  height: 50px;
+}
+
+#searchbar {
+  font-family: 'Print Clearly', bold;
+  font-size: 25pt;
+  width: 200px;
+  border: none;
+  margin-left: auto;
+  margin-right: 60px;
+  background-color: #C0CEDE;
+}
+
+input:focus {
+  outline: none;
+}
+
+input, textarea, [contenteditable] {
+  color: white;
+  caret-color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.account-block {
+  text-align: center;
+  background-image: url('./resources/triangle.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#slogan {
+  font-size: 80px;
+  color: #C0CEDE;
+  padding-top: 20px
+}
+
+#you {
+  font-size: 57px;
+}
+
+.header-title {
+  font-family: Print Clearly;
+  color: #A8B4C2;
+  font-size: 60px;
+}
+
+.emphasized-words {
+  font-family: Nunito;
+  color: #003466;
+  font-size: 45px;
+}
+
+.primary-button {
+  background-color: #003466;
+  font-family: Print Clearly;
+  border: none;
+  text-decoration: none;
+  color: #E0E9F5;
+  font-size: 33px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #002140;
+}
+
+.secondary-button {
+  background-color: #E0E9F5;
+  font-family: Print Clearly;
+  border: none;
+  text-decoration: none;
+  color: #003466;
+  font-size: 33px;
+  padding-right:30px;
+  padding-left: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #E8EEF8;
+}
+
+#log-in-subheader {
+  font-family: Print Clearly;
+  font-size-adjust: 15px;
+  color: #003466;
+}
+
+#log-in {
+  font-family: Nunito, bold;
+  font-size: 15px;
+  cursor: pointer;
+  padding-bottom: 25px;
+}
+
+.home-info {
+  display: flex;
+  justify-content: center;
+  background-color: #E9F2FF;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+p {
+  width: 50%;
+}
+
+.answer-text {
+  font-family: Print Clearly;
+  font-size: 25px;
+  color: #003466;
+  padding-left: 50px;
+}
+
+#info2 {
+  padding-top: 0px;
+}
+
+#our-techniques {
+  color: #C0CEDE;
+  font-size: 75px;
+  margin: 27px;
+}
+
+.cogsci-techniques {
+  text-align: center;
+}
+
+slider {
+  display: block;
+  width: 100%;
+  height: 70%;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: absolute;
+}
+
+slider > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1f1f1f;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+
+slide:nth-child(1) {
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url('./resources/slideshow-img/field.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url('./resources/slideshow-img/rain.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(3) {
+  animation-delay: 5s;
+  background-image: url('./resources/slideshow-img/field.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(4) {
+  animation-delay: 8s;
+  background-image: url('./resources/slideshow-img/rain.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slide {
+  0% {left: 100%; width: 100%;}
+  5% {left: 0%;}
+  25% {left: 0%;}
+  30% {left: -100%; width: 100%;}
+  30.0001% {left: -100%; width: 0%;}
+  100% {left: 100%; width: 0%;}
+}
+
+
+
+
+
+
+
+
