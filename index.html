@@ -20,19 +20,36 @@
       <button class = "primary-button" type = "button"> 
         i am a student
       </button>
-      <br> <br>
+      <br><br>
       <button class = "secondary-button" type = "button">
         i am an educator
       </button>
       <h3 id = 'log-in-subheader'> Already have an account?
-        <a id = 'log-in'>Log in</a>.
+        <button id = 'log-in'>Log in</button>
       </h3>
       <br><br>
     </div>
 
+    <div class = 'modal' id = 'login-modal'>
+      <div class = 'modal-content'>
+        <span class = 'close'>&times;</span>
+        <h3 class= 'header-title' id = 'log-in-header'>log in</h3>
+        <input class = 'login-text' id = "email-login" type = "text" placeholder = "email">
+        <input class = 'login-text' id = "password-login" type = "text" placeholder = "password">
+        <button class = 'primary-button'>
+          log in with google
+        </button>
+        <br><br>
+        <button class = 'secondary-button'>
+          log in with facebook
+        </button>
+        <br><br>
+      </div>
+    </div>
+
     <div class = "home-info">
       <h1 class = "header-title">who are 
-        <span class = "emphasized-words">  we?</span>
+        <span class = "emphasized-words"> we?</span>
       </h1>
       <p class = "answer-text">Corbii is an education technology startup founded by five students from the Georgia Institute of Technology in 2018. We aim to create a user-friendly, intelligent platform to make learning better and more efficient for everyone. </p>
     </div>
@@ -40,39 +57,30 @@
     <div class = 'home-info' id = 'info2'>
       <p class = "answer-text">Corbii is an online learning platform that uses cognitive science research to make your learning more efficient and improve your long term memory. With our site, you'll be able to truly learn the material you want to know, not just memorize it.</p>
       <h1 class = "header-title">what do we 
-        <span class = "emphasized-words">  do?</span>
+        <span class = "emphasized-words"> do?</span>
       </h1>
     </div>
 
     <div class = 'cogsci-techniques'>
-      <h2 class = 'header-title' id = 'our-techniques'> our techniques </h2>
-
+      <h2 class = 'header-title' id = 'our-techniques'>our techniques</h2>
       <slider>
-        <slide><p> </p></slide>
-        <slide><p> </p></slide>
-        <slide><p> </p></slide>
-        <slide><p> </p></slide>
+        <slide></slide>
+        <slide></slide>
+        <slide></slide>
+        <slide></slide>
       </slider>
     </div>
  
     <div class = 'learn-button'>
-      <button class = "primary-button" id = 'start-learning' type = "button"> 
-        start learning!
-      </button>
+      <button class = "primary-button" id = 'start-learning' type = "button">start learning!</button>
     </div>
 
     <div class = 'footer'>
-      <table class = 'footer-table' align= 'center'>
+      <table class = 'footer-table' align = 'center'>
         <tr>
-          <th class = 'footer-link'>
-            <a> my decks </a>
-          </th>
-          <th class = 'footer-link'>
-            <a> faq </a>
-          </th>
-          <th class = 'footer-link'id = 'search'>
-            <a> search </a>
-          </th>
+          <th class = 'footer-link'><a> my decks </a></th>
+          <th class = 'footer-link'><a> faq </a></th>
+          <th class = 'footer-link'id = 'search'><a> search </a></th>
           <th class = 'footer-social'>
             <a href = 'https://www.instagram.com/corbiitech/'>
               <img src = './resources/footer/ig.png'>
@@ -91,6 +99,7 @@
         </tr>
       </table>
     </div>
-  </body>
 
+    <script src = "style.js"></script>
+  </body>
 </html>
