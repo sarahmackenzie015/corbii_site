@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Corbii</title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+  
+  <body>
+    <div class = "header"> 
+      <a href = './index.html'>
+         <img id = 'header-logo' src='resources/header-logo.png' />
+      </a>
+      <input id = "searchbar" type = "text" placeholder = "search. . .">
+    </div>
+
+    <div class = 'create-deck'>
+      <input id = 'deck-title' type = "text" placeholder = "title your deck here">
+      <p class = 'small-caption' id = 'deck-subtitle'> deck title </p>
+    </div>
+
+    <div class = 'hr'><hr /></div>
+
+    <div class = 'collaborators'>
+      <p class = 'small-caption'> deck owner: </p>
+      <p class = 'small-caption'> collaborators: </p>
+      <div id = 'collab'>
+        <button class = 'small-caption' id = 'collab-button'> add collaborators </button>
+      </div>
+    </div>
+
+    <div class = 'modal' id = 'login-modal'>
+      <div class = 'modal-content'>
+        <span class = 'close'>&times;</span>
+        <h3 class= 'header-title' id = 'log-in-header'>add collaborators</h3>
+        <input class = 'login-text' = "text" placeholder = "enter names">
+        <button class = 'secondary-button'>
+          send request
+        </button>
+        <br><br>
+      </div>
+    </div>
+
+    <div class = 'flashcard'>
+      <p class = 'flashcard-number'> 1) </p>
+      <div class = 'flashcard-side'>
+          <textarea class = 'flashcard-text' type = "text" placeholder = "front information"></textarea> 
+      </div>
+      <img class = 'switch-front-and-back' src = './resources/flashcard-img/switch.png'>
+      <div class = 'flashcard-side'>
+          <textarea class = 'flashcard-text' type = "text" placeholder = "back information"></textarea> 
+      </div>
+      <div class = 'side-menu'>
+        <img class = 'side-options' src = './resources/flashcard-img/up-arrow.png'>
+        <img class = 'side-options' src = './resources/flashcard-img/trash.png'>
+        <img class = 'side-options' src = './resources/flashcard-img/down-arrow.png'>
+      </div>
+    </div>
+
+    <div class = 'flashcard'>
+      <p class = 'flashcard-number'> 2) </p>
+      <div class = 'flashcard-side'>
+          <textarea class = 'flashcard-text' type = "text" placeholder = "front information"></textarea> 
+      </div>
+      <img id = 'switch-front-and-back' src = './resources/flashcard-img/switch.png'>
+      <div class = 'flashcard-side'>
+          <textarea class = 'flashcard-text' type = "text" placeholder = "back information"></textarea> 
+      </div>
+      <div class = 'side-menu'>
+        <img class = 'side-options' src = './resources/flashcard-img/up-arrow.png'>
+        <img class = 'side-options' src = './resources/flashcard-img/trash.png'>
+        <img class = 'side-options' src = './resources/flashcard-img/down-arrow.png'>
+      </div>
+    </div>
+
+    <div class = 'add-more-card'>
+      <button class = "secondary-button" id = 'more-flashcard' type = "button">add another flashcard</button>
+    </div>
+
+    <div class = 'add-more-card' id = 'finalize-deck'>
+      <button class = "primary-button" type = "button">create deck</button>
+    </div>
+
+    <div class = 'footer'>
+      <table class = 'footer-table' align = 'center'>
+        <tr>
+          <th class = 'footer-link'><a> my decks </a></th>
+          <th class = 'footer-link'><a> faq </a></th>
+          <th class = 'footer-link' id = 'footer-search'><a> search </a></th>
+          <th class = 'footer-social'>
+            <a href = 'https://www.instagram.com/corbiitech/'>
+              <img src = './resources/footer/ig.png'>
+            </a>
+          </th>
+          <th class = 'footer-social'>
+            <a href = 'https://www.facebook.com/corbiitech/'>
+              <img src = './resources/footer/fb.png'>
+            </a>
+          </th>
+          <th class = 'footer-social'>
+            <a href = 'https://www.twitter.com/corbiitech/'>
+              <img src = './resources/footer/twitter.png'>
+            </a>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <script src = "style.js"></script>
+  </body>
+</html>

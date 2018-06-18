@@ -14,6 +14,7 @@ a {
   text-decoration: none;
 }
 
+
 body {
   margin: 0px;
   font-family: Print Clearly;
@@ -34,15 +35,23 @@ input:focus {
   outline: none;
 }
 
+textarea:focus {
+  outline: none;
+}
+
 button:focus {
   outline: none;
+}
+
+hr {
+  margin: 0;
 }
 
 /* Header Stuff */
 
 .header {
   display: flex;
-  background-color: #C0CEDE;
+  background-color: #003466;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -59,7 +68,7 @@ button:focus {
   border: none;
   margin-left: auto;
   margin-right: 60px;
-  background-color: #C0CEDE;
+  background-color: #003466;
   caret-color: white;
 }
 
@@ -134,6 +143,8 @@ button:focus {
   color: #003466;
 }
 
+/* Log in pop-up */
+
 .modal {
   display: none;
   position: fixed;
@@ -175,7 +186,7 @@ button:focus {
 }
 
 .login-text {
-  font-family: 'Print Clearly', bold;
+  font-family: 'Print Clearly';
   font-size: 25pt;
   width: 400px;
   border: none;
@@ -218,6 +229,8 @@ button:focus {
   color: #003466;
 }
 
+/* Home Page stuff */
+
 .home-info {
   display: flex;
   justify-content: center;
@@ -226,15 +239,11 @@ button:focus {
   padding-top: 20px;
 }
 
-p {
-  width: 50%;
-}
-
 .answer-text {
-  font-family: Print Clearly;
   font-size: 25px;
   color: #003466;
   padding-left: 50px;
+  width: 50%;
 }
 
 #info2 {
@@ -273,28 +282,28 @@ slider > * {
 slide:nth-child(1) {
   left: 0%;
   animation-delay: -1s;
-  background-image: url('./resources/slideshow-img/field.jpg');
+  background-image: url('./resources/slideshow-img/spaced-rep.jpg');
   background-size: cover;
   background-position: center;
 }
 
 slide:nth-child(2) {
   animation-delay: 2s;
-  background-image: url('./resources/slideshow-img/rain.jpg');
+  background-image: url('./resources/slideshow-img/self-exp.jpg');
   background-size: cover;
   background-position: center;
 }
 
 slide:nth-child(3) {
   animation-delay: 5s;
-  background-image: url('./resources/slideshow-img/field.jpg');
+  background-image: url('./resources/slideshow-img/spaced-rep.jpg');
   background-size: cover;
   background-position: center;
 }
 
 slide:nth-child(4) {
   animation-delay: 8s;
-  background-image: url('./resources/slideshow-img/rain.jpg');
+  background-image: url('./resources/slideshow-img/self-exp.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -308,7 +317,7 @@ slide:nth-child(4) {
   100% {left: 100%; width: 0%;}
 }
 
-.learn-button {
+.learn-button { 
   padding-top: 450px;
   padding-bottom: 40px;
   text-align: center;
@@ -320,6 +329,8 @@ slide:nth-child(4) {
   padding-left: 80px;
   padding-right: 80px;
 }
+
+/* Footer */
 
 .footer {
   background-color: #C0CEDE;
@@ -337,7 +348,7 @@ slide:nth-child(4) {
   padding-right: 17px;
 }
 
-#search {
+#footer-search {
   padding-right: 24px;
 }
 
@@ -346,6 +357,263 @@ slide:nth-child(4) {
   height: 30px;
 }
 
+/* Create a Deck tools */
 
+.create-deck {
+  margin-top: 30px;
+}
 
+#deck-title {
+  font-family: 'Print Clearly';
+  font-size: 60pt;
+  width: 100%;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  caret-color: #C0CEDE;
+  text-align: center;
+  text-decoration: underline;
+}
 
+#deck-title::placeholder {
+   color: #C0CEDE; 
+}
+
+#deck-title, select, textarea {
+  color: #003466;
+}
+
+.small-caption {
+  text-align: center;
+  font-family: Nunito;
+  color: #003466;
+  font-size: 14px;
+  margin: 0;
+}
+
+#deck-subtitle {
+  color: #003466;
+  font-size: 16px;
+}
+
+div.hr {
+  background: #003466  no-repeat scroll center;
+  width: 100%;
+  height:5px;
+}
+
+.collaborators {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #E9F2FF;
+} 
+
+#collab {
+  display: flex;
+  justify-content: center;
+}
+
+#collab-button {
+  background-color: #E9F2FF;
+  padding: 0;
+  font-family: Nunito, bold;
+}
+
+.flashcard {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  background-color: #E9F2FF;
+}
+
+.flashcard-number {
+  font-size: 40px;
+  padding-top: 50px;
+  margin-right: 10px;
+  color: #003466;
+}
+
+.flashcard-text {
+  height: 200px;
+  width: 400px;
+  border: 4px solid #C0CEDE;
+  text-decoration: none;
+  font-family: Print Clearly;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5px;
+  resize: none;
+}
+
+.flashcard-text::placeholder {
+  text-align: center;
+  padding-top: 75px;
+  font-size: 40px;
+  color: #A8B4C2;
+}
+
+.switch-front-and-back {
+  width: 45px;
+  height: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 75px;
+}
+
+.side-menu {
+  margin-top: 10px;
+}
+
+.side-options {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.add-more-card {
+  background-color: #E9F2FF;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#more-flashcard {
+  background-color: #C0CEDE;
+}
+
+#more-flashcard:hover {
+  background-color: #E0E9F5;
+}
+
+#finalize-deck {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Study */
+
+#study-header {
+  margin: 0;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 5px;
+}
+
+.study-menu {
+  text-align: center;
+  font-family: Print Clearly;
+  color: #003466;
+  font-size: 24px;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.study-nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: #E0E9F5; 
+}
+
+.flashcard-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.deck-title {
+  font-family: Print Clearly;
+  font-size: 50px;
+  text-align: center;
+  color: #003466;
+  margin-bottom: 10px;
+}
+
+.prev-and-next {
+  width: 40px;
+  height: 40px;
+  padding-top: 45px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.progress-bar {
+  height: 15px;
+  width: 200px;
+  background-color: lightgray;
+}
+
+#card-progress {
+  background-color: #003466;
+  width: 1%;
+}
+
+#card-counter {
+  font-family: Nunito, bold;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+
+.flashcard-area {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #003466;
+  padding-left: 70px;
+}
+
+#study-card {
+  margin-top: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.button-menu {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.analysis-button {
+  font-size: 24px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 150px;
+  align-items: center;
+}
+
+#very-hard {
+  background-color: #C8412B;
+}
+
+#very-hard:hover {
+  background-color: #963120;
+}
+
+#somewhat-hard {
+  background-color: #E3A02F;
+}
+
+#somewhat-hard:hover {
+  background-color: #AA7823;
+}
+
+#very-easy {
+  background-color: #50BE5C;
+}
+
+#very-easy:hover {
+  background-color: #3C8F45;
+}
+
+#flip-card {
+  padding-top: 0;
+}

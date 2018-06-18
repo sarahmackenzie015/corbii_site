@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Corbii</title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+  
+  <body>
+    <div class = "header"> 
+      <a href = './index.html'>
+         <img id = 'header-logo' src='resources/header-logo.png' />
+      </a>
+      <input id = "searchbar" type = "text" placeholder = "search. . .">
+    </div>
+
+    <div class = 'study-header'>
+      <h2 class = 'header-title' id = 'study-header'>study</h2>
+    </div>
+
+    <div class = 'hr'><hr /></div>
+
+    <div class = 'study-nav'>
+      <a href = './spacedrep.html' class = 'study-menu'> spaced repeition </a>
+      <a class = 'study-menu'> self-explanation </a>
+    </div>
+
+    <div class = 'hr'><hr /></div>
+
+
+
+
+    <div class = 'flashcard-nav'>
+      <input type = 'image' class = 'prev-and-next' id = 'previous' src =  './resources/prev-arrow.png'>
+      <div class = 'progress'>
+        <h2 class = 'deck-title'> Title Here </h2>
+
+        <div class="progress-bar">
+          <div id="card-progress" class="progress-bar"></div>
+        </div>
+
+        <p id = 'card-counter'>
+          <span id = 'cards-done'>0</span> /
+          <span id = 'total-cards'>10</span>
+        </p>
+
+      </div>
+
+      <input type = 'image' class = 'prev-and-next' id = 'next' src =  './resources/next-arrow.png' onclick = "move()">
+    </div>
+
+    <div class = 'flashcard-area'>
+      <p class = 'flashcard-text' id = 'study-card'> Front information goes here. Someday I will be vertically centered.</p> 
+      <img class = 'switch-front-and-back' id = 'flip-card' src = './resources/flashcard-img/switch.png'>
+    </div>
+
+    <div class = 'self-review' >
+      <h3 class = 'small-caption'> this card was: </h3>
+      <div class = 'button-menu'>
+        <button class = 'analysis-button' id = 'very-hard'>extremely hard</button>
+        <button class = 'analysis-button' id = 'somewhat-hard'>somewhat hard</button>
+        <button class = 'analysis-button' id = 'very-easy'>very easy</button>
+      </div>
+    </div>
+
+
+    <div class = 'footer'>
+      <table class = 'footer-table' align = 'center'>
+        <tr>
+          <th class = 'footer-link'><a> my decks </a></th>
+          <th class = 'footer-link'><a> faq </a></th>
+          <th class = 'footer-link' id = 'footer-search'><a> search </a></th>
+          <th class = 'footer-social'>
+            <a href = 'https://www.instagram.com/corbiitech/'>
+              <img src = './resources/footer/ig.png'>
+            </a>
+          </th>
+          <th class = 'footer-social'>
+            <a href = 'https://www.facebook.com/corbiitech/'>
+              <img src = './resources/footer/fb.png'>
+            </a>
+          </th>
+          <th class = 'footer-social'>
+            <a href = 'https://www.twitter.com/corbiitech/'>
+              <img src = './resources/footer/twitter.png'>
+            </a>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <script src = "style.js"></script>
+  </body>
+</html>
